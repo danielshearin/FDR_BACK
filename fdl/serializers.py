@@ -4,14 +4,14 @@ from .models import Restaurant, Todo, MenuItem
 class RestaurantSerializer(serializers.ModelSerializer):
     class Meta:
         model = Restaurant
-        fields = ('id', 'name', 'city', 'street', 'zip', 'phone')
+        fields = ('id', 'name', 'city', 'street', 'zip', 'phone', 'longitude', 'latitude', 'coordinates')
         
         
 
 class MenuItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = MenuItem
-        fields = ('id', 'item', 'restaurant', 'price', 'description', 'day')
+        fields = ('id', 'item', 'restaurant', 'price', 'description', 'day', 'dietary', 'open_time', 'close_time')
         
         
         

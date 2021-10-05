@@ -3,11 +3,11 @@ from .models import Todo, MenuItem, Restaurant
 
 
 class RestaurantAdmin(admin.ModelAdmin):
-    list_display = ('name', 'city', 'street', 'zip', 'phone')
+    list_display = ('name', 'city', 'street', 'zip', 'phone', 'longitude', 'latitude', 'coordinates',)
     
     
 class MenuItemAdmin(admin.ModelAdmin):
-    list_display = ('item', 'restaurant', 'price', 'description', 'day')
+    list_display = ('item', 'restaurant', 'price', 'description', 'day', 'open_time', 'close_time')
 
 
 class TodoAdmin(admin.ModelAdmin):
