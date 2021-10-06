@@ -5,6 +5,8 @@ from django.utils import timezone
 
 
 
+
+
 CITY_CHOICES = [
     ('asheville', 'Asheville'),
     ('durham', 'Durham'),
