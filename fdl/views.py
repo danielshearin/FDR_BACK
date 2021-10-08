@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .serializers import RestaurantSerializer, TodoSerializer, MenuItemSerializer
-from .models import Todo, Restaurant, MenuItem
+from .serializers import RestaurantSerializer, MenuItemSerializer
+from .models import Restaurant, MenuItem
 
 # Create your views here.
 

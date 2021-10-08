@@ -22,7 +22,7 @@ from django.views.generic import TemplateView
 router = routers.DefaultRouter()
 router.register('restaurants', views.RestaurantView, 'restaurant')
 router.register('menuitems', views.MenuItemView, 'menuitem')
-router.register('todos', views.TodoView, 'todo')
+# router.register('todos', views.TodoView, 'todo')
 
 
 urlpatterns = [
