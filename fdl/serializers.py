@@ -14,7 +14,6 @@ class MenuItemSerializer(serializers.ModelSerializer):
         fields = ('id', 'item', 'restaurant', 'price', 'description', 'day', 'dietary', 'open_time', 'close_time')
         
         
-        
 # class TodoSerializer(serializers.ModelSerializer):
 #     class Meta:
 #         model = Todo

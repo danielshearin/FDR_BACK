@@ -14,6 +14,6 @@ class MenuItemView(viewsets.ModelViewSet):
     queryset = MenuItem.objects.all()
 
 # Create your views here.
-class TodoView(viewsets.ModelViewSet):
-    serializer_class = TodoSerializer
-    queryset = Todo.objects.all()
+# class TodoView(viewsets.ModelViewSet):
+#     serializer_class = TodoSerializer
+#     queryset = Todo.objects.all()
