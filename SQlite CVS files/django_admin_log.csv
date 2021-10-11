@@ -1,0 +1,133 @@
+id,action_time,object_id,object_repr,change_message,content_type_id,user_id,action_flag
+1,2021-09-22 21:24:05.070671,1,Chai Pani,"[{""added"": {}}]",7,1,1
+2,2021-10-04 18:45:17.036111,1,Green Mango Chaat,"[{""added"": {}}]",10,1,1
+3,2021-10-04 18:45:37.820291,2,Green Mango Chaat,"[{""added"": {}}]",10,1,1
+4,2021-10-04 18:45:53.474088,1,Green Mango Chaat,,10,1,3
+5,2021-10-04 18:45:56.512588,2,Green Mango Chaat,[],10,1,2
+6,2021-10-04 18:47:43.819169,3,Aloo Tikki Chaat,"[{""added"": {}}]",10,1,1
+7,2021-10-04 18:48:26.181131,4,Chicken Pakoras,"[{""added"": {}}]",10,1,1
+8,2021-10-04 18:48:36.331767,3,Aloo Tikki Chaat,"[{""changed"": {""fields"": [""Time""]}}]",10,1,2
+9,2021-10-04 18:48:39.959465,2,Green Mango Chaat,"[{""changed"": {""fields"": [""Time""]}}]",10,1,2
+10,2021-10-04 18:49:46.148162,5,Desi Chicken Salad,"[{""added"": {}}]",10,1,1
+11,2021-10-04 18:50:26.845263,6,Papadum,"[{""added"": {}}]",10,1,1
+12,2021-10-04 18:50:58.712103,7,Kheer,"[{""added"": {}}]",10,1,1
+13,2021-10-04 18:51:47.213242,8,Kids Cheese Paratha,"[{""added"": {}}]",10,1,1
+14,2021-10-04 18:51:53.433653,8,Kids Cheese Paratha,"[{""changed"": {""fields"": [""Dietary""]}}]",10,1,2
+15,2021-10-04 18:52:37.162323,9,To-Go Cholle & Rice,"[{""added"": {}}]",10,1,1
+16,2021-10-04 18:54:18.396074,10,Smoked Pulled Chicken Plate,"[{""added"": {}}]",10,1,1
+17,2021-10-04 18:54:54.477376,11,Smoky Fried NC Catfish Plate,"[{""added"": {}}]",10,1,1
+18,2021-10-04 18:55:30.230950,12,Skillet Cornbread,"[{""added"": {}}]",10,1,1
+19,2021-10-04 18:56:15.470352,13,buxton summer salad,"[{""added"": {}}]",10,1,1
+20,2021-10-04 19:21:42.548913,2,Buxton Hall,"[{""changed"": {""fields"": [""Longitude"", ""Latitude""]}}]",7,1,2
+21,2021-10-04 19:21:50.460910,2,Buxton Hall,[],7,1,2
+22,2021-10-04 19:24:10.361430,1,Chai Pani,"[{""changed"": {""fields"": [""Longitude"", ""Latitude""]}}]",7,1,2
+23,2021-10-04 19:26:50.399291,3,Benne on Eagle,"[{""added"": {}}]",7,1,1
+24,2021-10-04 19:28:14.309365,14,Berberie Spiced Joyce Farms Chicken,"[{""added"": {}}]",10,1,1
+25,2021-10-04 19:28:38.405738,15,Pepperpot Stew,"[{""added"": {}}]",10,1,1
+26,2021-10-04 19:29:10.135504,16,Cobia & Akara,"[{""added"": {}}]",10,1,1
+27,2021-10-04 19:29:51.004561,17,Le Courage 10 Oz NY Strip Steak,"[{""added"": {}}]",10,1,1
+28,2021-10-04 19:30:39.688584,18,Egg and Cheese Sandwich,"[{""added"": {}}]",10,1,1
+29,2021-10-04 19:31:08.694675,19,Biscuit and Gravy,"[{""added"": {}}]",10,1,1
+30,2021-10-04 19:31:36.680899,20,Fried Chicken and Waffle,"[{""added"": {}}]",10,1,1
+31,2021-10-04 19:32:01.389291,21,Shrimp and Grits,"[{""added"": {}}]",10,1,1
+32,2021-10-04 19:33:35.145177,4,Taco Temple,"[{""added"": {}}]",7,1,1
+33,2021-10-04 19:34:21.154745,22,El Guero,"[{""added"": {}}]",10,1,1
+34,2021-10-04 19:34:49.841595,23,La Gringa,"[{""added"": {}}]",10,1,1
+35,2021-10-04 19:35:27.544891,24,El Chulo,"[{""added"": {}}]",10,1,1
+36,2021-10-04 19:35:50.022293,25,La Guapa,"[{""added"": {}}]",10,1,1
+37,2021-10-04 19:37:30.312861,26,Chips & Salsa,"[{""added"": {}}]",10,1,1
+38,2021-10-04 19:38:21.983535,27,Avocado Torta,"[{""added"": {}}]",10,1,1
+39,2021-10-04 19:38:47.716100,28,Al Pastor Torta,"[{""added"": {}}]",10,1,1
+40,2021-10-04 19:41:34.216077,5,Taco Billy,"[{""added"": {}}]",7,1,1
+41,2021-10-04 19:45:31.358005,29,Migas Taco,"[{""added"": {}}]",10,1,1
+42,2021-10-04 19:47:23.876570,30,Build your own Taco,"[{""added"": {}}]",10,1,1
+43,2021-10-04 19:48:41.709838,31,Kirb Service Taco,"[{""added"": {}}]",10,1,1
+44,2021-10-04 19:49:11.870368,32,Yard Bird Taco,"[{""added"": {}}]",10,1,1
+45,2021-10-04 19:49:17.498075,32,Yard Bird Taco,[],10,1,2
+46,2021-10-04 19:50:13.954906,33,San Cris,"[{""added"": {}}]",10,1,1
+47,2021-10-04 19:52:23.681685,34,Good Lovin',"[{""added"": {}}]",10,1,1
+48,2021-10-04 19:53:32.362152,35,Vegan Lunch Lady,"[{""added"": {}}]",10,1,1
+49,2021-10-04 19:55:48.598896,6,Standard Pizza Co.,"[{""added"": {}}]",7,1,1
+50,2021-10-04 19:57:12.068088,36,Single Pizza Slice,"[{""added"": {}}]",10,1,1
+51,2021-10-04 19:58:15.601515,36,Single Pizza Slice,"[{""changed"": {""fields"": [""Time""]}}]",10,1,2
+52,2021-10-04 19:58:49.013292,37,Supreme Pizza Slice,"[{""added"": {}}]",10,1,1
+53,2021-10-04 19:59:13.192637,38,Garden Slice,"[{""added"": {}}]",10,1,1
+54,2021-10-04 19:59:37.003612,39,Thirteen Slice,"[{""added"": {}}]",10,1,1
+55,2021-10-04 20:00:11.843381,40,Calzone,"[{""added"": {}}]",10,1,1
+56,2021-10-04 20:00:43.138870,41,Supreme Large,"[{""added"": {}}]",10,1,1
+57,2021-10-04 20:01:10.890058,42,Large Garden,"[{""added"": {}}]",10,1,1
+58,2021-10-04 20:03:06.416301,7,Bim Beri Bon,"[{""added"": {}}]",7,1,1
+59,2021-10-04 20:04:00.224828,43,Cuban Roasted Plantain Bowl,"[{""added"": {}}]",10,1,1
+60,2021-10-04 20:04:36.314210,44,Yam Hot Bowl,"[{""added"": {}}]",10,1,1
+61,2021-10-04 20:05:20.945431,45,Farm Egg Sandwich,"[{""added"": {}}]",10,1,1
+62,2021-10-04 20:05:44.883509,46,Vegan Egg Sandwich,"[{""added"": {}}]",10,1,1
+63,2021-10-04 20:06:15.760762,47,Vietnamese Bahn Mi Sandwich,"[{""added"": {}}]",10,1,1
+64,2021-10-04 20:06:49.988623,48,Fried Potato Wedge,"[{""added"": {}}]",10,1,1
+65,2021-10-04 20:06:56.828877,48,Fried Potato Wedge,"[{""changed"": {""fields"": [""Dietary""]}}]",10,1,2
+66,2021-10-05 01:00:21.927814,48,Fried Potato Wedge,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+67,2021-10-05 01:00:30.738360,47,Vietnamese Bahn Mi Sandwich,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+68,2021-10-05 01:00:37.480275,46,Vegan Egg Sandwich,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+69,2021-10-05 01:00:42.961389,45,Farm Egg Sandwich,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+70,2021-10-05 01:00:48.689386,44,Yam Hot Bowl,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+71,2021-10-05 01:00:53.304205,43,Cuban Roasted Plantain Bowl,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+72,2021-10-05 01:01:28.897030,42,Large Garden,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+73,2021-10-05 01:01:35.999623,41,Supreme Large,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+74,2021-10-05 01:01:42.651086,42,Large Garden,[],10,1,2
+75,2021-10-05 01:01:50.870789,40,Calzone,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+76,2021-10-05 01:02:08.883436,39,Thirteen Slice,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+77,2021-10-05 01:02:17.509375,38,Garden Slice,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+78,2021-10-05 01:02:23.960364,37,Supreme Pizza Slice,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+79,2021-10-05 01:02:31.829674,36,Single Pizza Slice,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+80,2021-10-05 01:03:16.519098,35,Vegan Lunch Lady,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+81,2021-10-05 01:03:24.773557,34,Good Lovin',"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+82,2021-10-05 01:03:35.239481,33,San Cris,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+83,2021-10-05 01:03:44.213103,32,Yard Bird Taco,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+84,2021-10-05 01:03:54.901065,31,Kirb Service Taco,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+85,2021-10-05 01:05:40.463830,31,Kirb Service Taco,"[{""changed"": {""fields"": [""Open time""]}}]",10,1,2
+86,2021-10-05 01:05:47.864297,30,Build your own Taco,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+87,2021-10-05 01:06:04.790418,29,Migas Taco,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+88,2021-10-05 01:06:29.032672,28,Al Pastor Torta,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+89,2021-10-05 01:06:36.390689,27,Avocado Torta,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+90,2021-10-05 01:06:48.694181,26,Chips & Salsa,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+91,2021-10-05 01:06:56.180925,25,La Guapa,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+92,2021-10-05 01:07:03.414980,24,El Chulo,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+93,2021-10-05 01:07:10.437181,23,La Gringa,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+94,2021-10-05 01:07:18.309149,22,El Guero,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+95,2021-10-05 01:08:14.889259,21,Shrimp and Grits,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+96,2021-10-05 01:08:24.718724,20,Fried Chicken and Waffle,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+97,2021-10-05 01:08:33.383782,19,Biscuit and Gravy,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+98,2021-10-05 01:08:41.158462,18,Egg and Cheese Sandwich,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+99,2021-10-05 01:09:26.370532,16,Cobia & Akara,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+100,2021-10-05 01:09:33.305927,15,Pepperpot Stew,"[{""changed"": {""fields"": [""Open time""]}}]",10,1,2
+101,2021-10-05 01:09:39.322855,15,Pepperpot Stew,"[{""changed"": {""fields"": [""Close time""]}}]",10,1,2
+102,2021-10-05 01:09:48.448844,14,Berberie Spiced Joyce Farms Chicken,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+103,2021-10-05 01:10:21.467899,13,buxton summer salad,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+104,2021-10-05 01:10:30.794386,13,buxton summer salad,"[{""changed"": {""fields"": [""Close time""]}}]",10,1,2
+105,2021-10-05 01:10:39.642022,12,Skillet Cornbread,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+106,2021-10-05 01:10:50.658641,11,Smoky Fried NC Catfish Plate,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+107,2021-10-05 01:11:07.923077,17,Le Courage 10 Oz NY Strip Steak,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+108,2021-10-05 01:11:19.561986,10,Smoked Pulled Chicken Plate,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+109,2021-10-05 01:11:53.641820,9,To-Go Cholle & Rice,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+110,2021-10-05 01:12:02.587712,8,Kids Cheese Paratha,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+111,2021-10-05 01:12:09.761480,7,Kheer,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+112,2021-10-05 01:12:17.561189,6,Papadum,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+113,2021-10-05 01:12:23.314958,5,Desi Chicken Salad,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+114,2021-10-05 01:12:29.352730,4,Chicken Pakoras,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+115,2021-10-05 01:12:35.305290,3,Aloo Tikki Chaat,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+116,2021-10-05 01:12:41.170516,2,Green Mango Chaat,"[{""changed"": {""fields"": [""Open time"", ""Close time""]}}]",10,1,2
+117,2021-10-05 01:13:45.949778,42,Large Garden,"[{""changed"": {""fields"": [""Close time""]}}]",10,1,2
+118,2021-10-05 01:13:49.272941,41,Supreme Large,"[{""changed"": {""fields"": [""Close time""]}}]",10,1,2
+119,2021-10-05 01:13:52.953159,40,Calzone,"[{""changed"": {""fields"": [""Close time""]}}]",10,1,2
+120,2021-10-05 01:13:57.720503,39,Thirteen Slice,"[{""changed"": {""fields"": [""Close time""]}}]",10,1,2
+121,2021-10-05 01:14:02.523459,38,Garden Slice,"[{""changed"": {""fields"": [""Close time""]}}]",10,1,2
+122,2021-10-05 01:14:05.775487,38,Garden Slice,[],10,1,2
+123,2021-10-05 01:14:10.984183,37,Supreme Pizza Slice,"[{""changed"": {""fields"": [""Close time""]}}]",10,1,2
+124,2021-10-05 01:14:15.591447,36,Single Pizza Slice,"[{""changed"": {""fields"": [""Close time""]}}]",10,1,2
+125,2021-10-05 02:46:14.849413,7,Bim Beri Bon,"[{""changed"": {""fields"": [""Coordinates""]}}]",7,1,2
+126,2021-10-05 02:46:25.835204,6,Standard Pizza Co.,"[{""changed"": {""fields"": [""Coordinates""]}}]",7,1,2
+127,2021-10-05 02:47:02.195156,5,Taco Billy,"[{""changed"": {""fields"": [""Coordinates""]}}]",7,1,2
+128,2021-10-05 02:47:11.990437,4,Taco Temple,"[{""changed"": {""fields"": [""Coordinates""]}}]",7,1,2
+129,2021-10-05 02:47:22.251117,3,Benne on Eagle,"[{""changed"": {""fields"": [""Coordinates""]}}]",7,1,2
+130,2021-10-05 02:47:31.576101,2,Buxton Hall,"[{""changed"": {""fields"": [""Coordinates""]}}]",7,1,2
+131,2021-10-05 02:47:38.832582,2,Buxton Hall,"[{""changed"": {""fields"": [""Coordinates""]}}]",7,1,2
+132,2021-10-05 02:47:47.440232,1,Chai Pani,"[{""changed"": {""fields"": [""Coordinates""]}}]",7,1,2

@@ -1,0 +1,71 @@
+id,item,price,description,day,restaurant_id,time,dietary,close_time,open_time
+2,Green Mango Chaat,9.99,"Fresh green mango tossed with peanuts, golden raisins, corn poha (Indian corn flakes), onion, & cilantro. Topped with green chutney, lime & curry leaves.",all_days,1,lunch_dinner,vegetarian,21,11
+3,Aloo Tikki Chaat,10.99,"Crispy Indian potato fritters (two) topped with crunchy chickpea noodles (sev) and served with spiced garbanzo bean stew. Tamarind chutney, green chutney, and sweetened yogurt are served on the side in the takeout version of this dish. To make it just like we would serve it if you were dining in simply add the potato fritters to the stew and top with tamarind chutney, then green chutney and lastly the sweet yogurt and its ready to be enjoyed!
+*Dietary Modifications*
+Dairy Free- Do not add sweet yogurt.
+Gluten-free- n/a
+Vegan- n/a",all_days,1,lunch_dinner,vegetarian,21,11
+4,Chicken Pakoras,10.99,"Joyce Farms chicken seasoned w/ Kashmiri spices in a curried chickpea
+batter. Served with green chutney & sweet yogurt.
+*Dietary Restrictions*
+Dairy-free- Substitute the sweet yogurt on the side for one of our vegan chutneys (tamarind or green chutney)
+Gluten-free- 99% gluten-free (fried in a shared fryer)",all_days,1,lunch_dinner,none,21,11
+5,Desi Chicken Salad,12.99,"Marinated and grilled chicken on a bed of shredded white & red cabbage, carrots, and scallions, topped with toasted sesame seeds, cilantro, and sev, with a cumin-lime
+vinaigrette.",all_days,1,lunch_dinner,none,21,11
+6,Papadum,1.99,5 thin lentil flatbread crisps served with green and tamarind chutneys.,all_days,1,lunch_dinner,vegetarian,21,11
+7,Kheer,4.99,Kheer - rice pudding dessert,all_days,1,lunch_dinner,none,21,11
+8,Kids Cheese Paratha,3.99,Mozzarella cheese melted between flaky layered flatbread. Served with sweet yogurt.,all_days,1,lunch_dinner,vegetarian,21,11
+9,To-Go Cholle & Rice,8.99,"Garbanzo beans slow-cooked in a spicy-sweet broth with tamarind, jaggery, onions and tomatoes. served with basmati rice, masala slaw and raita. To be made vegan substitute the raita for green or tamarind chutney.",all_days,1,lunch_dinner,vegetarian,21,11
+10,Smoked Pulled Chicken Plate,15.0,"tossed in red BBQ sauce, pickles",all_days,2,lunch_dinner,none,21,11
+11,Smoky Fried NC Catfish Plate,18.0,"lightly smoked, cornmeal breaded, bbq sauce, tartar sauce, lemon, pickles",all_days,2,lunch_dinner,none,21,11
+12,Skillet Cornbread,8.0,farm and sparrow cornmeal w/ honey lard,all_days,2,lunch_dinner,vegetarian,21,11
+13,buxton summer salad,11.0,"bibb lettuce, candied pecans, peaches, goat cheese, honey-champagne vinaigrette",all_days,2,lunch_dinner,vegetarian,21,11
+14,Berberie Spiced Joyce Farms Chicken,28.0,"Palm Oil Chermoula, Basmati Rice,
+Spiced Yogurt",all_days,3,dinner,none,21,17
+15,Pepperpot Stew,20.0,"Cassava, Okinawan Sweet Potatoes,
+Broccolini, Plantains",all_days,3,dinner,none,21,17
+16,Cobia & Akara,29.0,"Sweet Chili Garlic, Green Mango, Turnips",all_days,3,dinner,none,21,17
+17,Le Courage 10 Oz NY Strip Steak,38.0,"Kimchi Jus, Collard Green Kimchi",all_days,3,dinner,none,21,17
+18,Egg and Cheese Sandwich,11.0,"Scrambled Egg, Cheddar, Brioche Bun
+Served with Home Fries",sunday,3,brunch,vegetarian,14,11
+19,Biscuit and Gravy,12.0,"Two eggs your way, Sausage Gravy",sunday,3,brunch,none,14,11
+20,Fried Chicken and Waffle,18.0,"Joyce Farms Chicken, Pecan Butter, Pickled Watermelon, Maple Syrup",sunday,3,brunch,none,14,11
+21,Shrimp and Grits,21.0,"Oyster XO Sauce, Tomatoes, Chives",sunday,3,brunch,none,14,11
+22,El Guero,3.5,"Chorizo Verde, scrambled eggs sweet potato, cheese, and salsa verde",all_days,4,breakfast,none,20,9
+23,La Gringa,3.5,"Bacon, scrambled egg, jack cheese, and chipotle salsa",all_days,4,breakfast,none,20,9
+24,El Chulo,9.0,"Breakfast Torta -- Fried Egg Blt. Bacon, lettuce, tomato, and roasted green chile mayo",all_days,4,breakfast,none,20,9
+25,La Guapa,8.0,"Breakfast Torta - Bacon, egg, cheese, and salsa verde",all_days,4,breakfast,none,20,9
+26,Chips & Salsa,3.0,your choice of one of our scratch-made salsas and plenty of fresh chips (serves 3-4ppl),all_days,4,lunch_dinner,vegetarian,20,9
+27,Avocado Torta,9.95,"Griddled Panela Cheese, Sliced Avocado, Black Bean Spread, Roasted Poblano Peppers & Caramelized Onions, Fresh Pico De Gallo, Romaine Lettuce, and Baja Mayo",all_days,4,lunch_dinner,vegetarian,20,9
+28,Al Pastor Torta,8.95,"Spit-roasted Guajillo Chile-Pineapple Pork Al Pastor, Chipotle Mayo, Black Bean Spread, Quesillo Cheese, Avocado, Pico De Gallo & Romaine",all_days,4,lunch_dinner,none,20,9
+29,Migas Taco,3.0,"Breakfast Taco
+Eggs, onions, jalepenos, tomatoes, crispy fried tortilla colby-jack cheese",all_days,5,breakfast_lunch_dinner,none,20,8
+30,Build your own Taco,3.0,"2 items $2.50
+3 items $3
+4 items $3.5
+
+Fillings - Eggs, Bacon, Sausage, Veggie Chorizo, Spinach, Avocado, Black Beans, Cheese
+Tortillas - flour, corn, plantain
+Salsas - tomato, tomatillo, avocado",all_days,5,breakfast_lunch_dinner,none,20,8
+31,Kirb Service Taco,4.25,"Beef medallions, onions pepers ancho chillas sauce, jack cheese",all_days,5,lunch,none,20,8
+32,Yard Bird Taco,3.75,"Fried chicken, mango slaw and siracha aioli",all_days,5,lunch,none,20,8
+33,San Cris,3.95,"Slow roasted pork, pickled onion, queso fresco and jalapeno crema, corn tortilla",all_days,5,lunch,gluten_free,20,8
+34,Good Lovin',3.5,"Broccoli, bell peppers, mushrooms, zucchini, spinach, fresh garlic, brown rice, jack cheese and jalapeno crema on corn tortilla",all_days,5,lunch,vegetarian_and_gf,20,8
+35,Vegan Lunch Lady,4.5,"Smiling Hara tempeh, Mexican mole, topped with pickled onion and queso fersco, corn tortilla",all_days,5,lunch,vegan,20,8
+36,Single Pizza Slice,2.75,"$0.50 per topping:
+pepperoni, italian sausage, sliced meatball, bacon, soy sausage*, anchovy, mushroom, onion, green pepper, green olives, black olives, spinach, tomato, pesto, broccoli, jalapeño, feta, fresh garlic, banana, fresh basil, artichoke hearts",all_days,6,lunch_dinner_and_late_night,none,24,11
+37,Supreme Pizza Slice,5.5,"pepperoni, italian sausage, sliced meatball, mushroom, onion, green pepper, green & black olives, extra cheese",all_days,6,lunch_dinner_and_late_night,none,24,11
+38,Garden Slice,4.75,"mushroom, onion, green pepper, green & black olives, tomato, fresh garlic",all_days,6,lunch_dinner_and_late_night,vegetarian,24,11
+39,Thirteen Slice,3.95,"spinach, mushroom, fresh garlic, extra cheese",all_days,6,lunch_dinner_and_late_night,none,24,11
+40,Calzone,8.0,"start with mozzarella and ricotta cheeses
++ 0.75 each topping
+pepperoni, italian sausage, sliced meatball, bacon, soy sausage*, anchovy, mushroom, onion, green pepper, green olives, black olives, spinach, tomato, pesto, broccoli, jalapeño, feta, fresh garlic, banana, fresh basil, artichoke hearts",all_days,6,lunch_dinner_and_late_night,none,24,11
+41,Supreme Large,24.0,"pepperoni, italian sausage, sliced meatball, mushroom, onion, green pepper, green & black olives, extra cheese",all_days,6,lunch_dinner_and_late_night,none,24,11
+42,Large Garden,22.5,"mushroom, onion, green pepper, green & black olives, tomato, fresh garlic",all_days,6,lunch_dinner_and_late_night,vegetarian,24,11
+43,Cuban Roasted Plantain Bowl,13.0,"choice of roasted Jackfruit or roasted pork, black beans, ranchero sauce, guacamole, pico de gallo, cilantro",weekends,7,breakfast_and_lunch,vegetarian_and_gf,14,10
+44,Yam Hot Bowl,13.0,"greens, roasted yams, quinoa, choice of vegan or farm egg, cashew cilantro crema, red onion & tomato",weekends,7,breakfast_and_lunch,vegan,14,10
+45,Farm Egg Sandwich,9.0,"soft bun, pork sausage, cheddar cheese, scrambled eggs, pepper aioli, pickled red onion, arugula",weekends,7,breakfast_and_lunch,gluten_free,14,10
+46,Vegan Egg Sandwich,10.0,"soft bun, tempeh sausage, cashew herb cheese, scrambled eggs, pepper aioli, pickled red onion, arugula",weekends,7,breakfast_and_lunch,vegan,14,10
+47,Vietnamese Bahn Mi Sandwich,13.0,"choice of grilled marinated chicken breast or roasted marinated soy curls, baguette, crisp kimchi, sambal mayo, hoisin sauce, cucumbers, served with fried potato wedges & tomato chutney
+add grilled steak $2",weekends,7,breakfast_and_lunch,gluten_free,14,10
+48,Fried Potato Wedge,6.0,harissa hot sauce & tomato chutney,weekends,7,breakfast_and_lunch,vegan,14,10
