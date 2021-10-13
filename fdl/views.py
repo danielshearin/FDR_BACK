@@ -33,3 +33,4 @@ class SearchItemsView(APIView):
         serializer = MenuItemSerializer(menu_items, many=True)
         
         return Response(serializer.data)
+        # return Response(day)
