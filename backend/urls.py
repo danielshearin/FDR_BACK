@@ -19,13 +19,16 @@ from rest_framework import routers
 from fdl import views
 from django.views.generic import TemplateView
 
+
 router = routers.DefaultRouter()
 router.register('restaurants', views.RestaurantView, 'restaurant')
 router.register('menuitems', views.MenuItemView, 'menuitem')
+# router.register('searchitems', views.SearchItemsView, 'searchitems')
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.html')),
     path('api/', include(router.urls)),
+    path('api/searchitems', views.SearchItemsView.as_view())
 ]
