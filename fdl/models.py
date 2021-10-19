@@ -44,11 +44,12 @@ DAY_CHOICES = [
 
 DIETARY_CHOICES = [
     ('none', 'none'),
-    ('vegan', 'Vegan'),
-    ('vegetarian', 'Vegetarian'),
-    ('gluten_free', 'Gluten-Free'),
-    ('vegetarian_and_gf', 'Vegetarian and GF'),
-    ('vegan_and_gf', 'Vegan and GF'),
+    ('Vegan', 'Vegan'),
+    ('Vegetarian', 'Vegetarian'),
+    ('Gluten-free', 'Gluten-free'),
+    ('Vegetarian and Gluten-free', 'Vegetarian and GF'),
+    ('Vegan and Gluten-free', 'Vegan and GF'),
+    ('Dairy-free', 'Dairy-free')
 ]
 
 TAG_CHOICES = [
