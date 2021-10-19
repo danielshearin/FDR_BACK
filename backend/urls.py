@@ -18,6 +18,8 @@ from django.urls import path, include
 from rest_framework import routers
 from fdl import views
 from django.views.generic import TemplateView
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 router = routers.DefaultRouter()
@@ -29,5 +31,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.html')),
     path('api/', include(router.urls)),
-    path('api/searchitems', views.SearchItemsView.as_view())
-]
+    path('api/searchitems', views.SearchItemsView.as_view()),
+]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

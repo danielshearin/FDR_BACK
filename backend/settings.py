@@ -35,6 +35,9 @@ DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = []
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
+# MEDIA_URL = '/images/'
+
 
 # Application definition
 
@@ -49,6 +52,7 @@ INSTALLED_APPS = [
     'backend',
     'corsheaders',
     'rest_framework',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -143,6 +147,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
 ]
+
 
 
 
