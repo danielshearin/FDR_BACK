@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'fdl.apps.FdlConfig',
     'backend',
+    'environ',
     'corsheaders',
     'rest_framework',
     'taggit',
