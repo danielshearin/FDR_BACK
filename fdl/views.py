@@ -27,9 +27,26 @@ class SearchItemsView(APIView):
         price_high = request.data['price_high']
         time = request.data['time'] 
         day = request.data['day']
-    
-# use if diet default is 'none' in frontend
+        # if day == 'weekends':
+        #     return ['weekends', 'saturday', 'sunday']
+        # if day == 'weekdays':
+        #     return ['weekdays', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday']
+        # if day == 'none':
+        #     return ['monday', 'tuesday', 'wednesday', 'thursday', 
+        #             'friday', 'saturday', 'weekends', 'weekdays', 'all_days']
+        
         dietary = request.data['dietary']
+        # if dietary == 'none':
+        #     return ['none', 'vegetarian', 'vegan', 'gluten_free', 'vegetarian_and_gf', 'vegan_and_gf']
+        # if dietary == 'vegetarian':
+        #     return ['vegetarian', 'vegan', 'vegetarian_and_gf', 'vegan_and_gf']
+        # if dietary == 'vegan':
+        #     return ['vegan', 'vegan_and_gf']
+        # if dietary == 'gluten_free':
+        #     return ['gluten_free', 'vegetarian_and_gf', 'vegan_and_gf']
+        
+        # menu_items = MenuItem.objects.filter((Q(day__in=day) | Q(day="all_days")) & Q(price__gte=price_low) & Q(price__lte=price_high) & Q(open_time__lte=time) & Q(close_time__gte=time) & Q(tags__name__in=dietary))
+        
         menu_items = MenuItem.objects.filter((Q(day__in=day) | Q(day="all_days") | Q(tags__name__in=day)) & Q(price__gte=price_low) & Q(price__lte=price_high) & Q(open_time__lte=time) & Q(close_time__gte=time) & Q(tags__name__in=dietary))
 
         serializer = MenuItemSerializer(menu_items, many=True)

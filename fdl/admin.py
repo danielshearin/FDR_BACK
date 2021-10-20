@@ -7,7 +7,7 @@ class RestaurantAdmin(admin.ModelAdmin):
     
     
 class MenuItemAdmin(admin.ModelAdmin):
-    list_display = ('item', 'restaurant', 'price', 'description', 'day', 'open_time', 'close_time', 'dietary', 'tags')
+    list_display = ('item', 'restaurant', 'price', 'description', 'day', 'dietary', 'open_time', 'close_time', 'tags')
 
 
 # Register your models here.
