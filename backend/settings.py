@@ -14,8 +14,8 @@ import os
 from pathlib import Path
 import environ
 import django_on_heroku
-django_on_heroku.settings(locals())
-del DATABASES['default']['OPTIONS']['sslmode']
+# django_on_heroku.settings(locals())
+# del DATABASES['default']['OPTIONS']['sslmode']
 
 env = environ.Env(
     # set casting, default value
@@ -39,7 +39,7 @@ DEBUG = env('DEBUG')
 ALLOWED_HOSTS = []
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
-# MEDIA_URL = '/images/'
+MEDIA_URL = '/images/'
 
 
 # Application definition
@@ -140,7 +140,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'FDL_ReactApp/build/static')
+    os.path.join(BASE_DIR, 'static')
+    # os.path.join(BASE_DIR, 'FDL_ReactApp/build/static')
 ]
 
 # Default primary key field type

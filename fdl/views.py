@@ -27,23 +27,10 @@ class SearchItemsView(APIView):
         price_high = request.data['price_high']
         time = request.data['time'] 
         day = request.data['day']
-        
+    
 # use if diet default is 'none' in frontend
         dietary = request.data['dietary']
-        menu_items = MenuItem.objects.filter((Q(day__in=day) | Q(day="all_days")) & Q(price__gte=price_low) & Q(price__lte=price_high) & Q(open_time__lte=time) & Q(close_time__gte=time) & Q(tags__name__in=dietary))
-        
-# use if diet default is null in frontend
-        # def dietary():
-        #     diets = request.data['dietary']
-        #     diets_array = []
-        #     for diet in diets:
-        #         if diet is None:
-        #             diet = 'none'
-        #         else:
-        #             diet = [diet]
-        #         diets_array.append(diet)
-        #     return diets_array
-        # menu_items = MenuItem.objects.filter((Q(day__in=day) | Q(day="all_days")) & Q(price__gte=price_low) & Q(price__lte=price_high) & Q(open_time__lte=time) & Q(close_time__gte=time) & Q(tags__name__in=dietary()))
+        menu_items = MenuItem.objects.filter((Q(day__in=day) | Q(day="all_days") | Q(tags__name__in=day)) & Q(price__gte=price_low) & Q(price__lte=price_high) & Q(open_time__lte=time) & Q(close_time__gte=time) & Q(tags__name__in=dietary))
 
         serializer = MenuItemSerializer(menu_items, many=True)
         
