@@ -14,7 +14,7 @@ import os
 from pathlib import Path
 import environ
 import django_on_heroku
-django_on_heroku.settings(locals())
+
 # del DATABASES['default']['OPTIONS']['sslmode']
 
 env = environ.Env(
@@ -153,6 +153,4 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
 ]
 
-
-
-
+django_on_heroku.settings(locals())
