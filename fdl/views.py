@@ -22,11 +22,42 @@ class MenuItemView(viewsets.ModelViewSet):
 class SearchItemsView(APIView):
     parser_classes = [JSONParser]
     
+    
     def post(self, request, format=None):
+        def diet():
+            dietary = request.data['dietary']
+            # print(dietary)
+            if dietary == []:
+                dietary = ['none']
+                print('null success')
+            elif dietary == ['none']:
+                dietary = ['none']
+                print('none success')
+            elif dietary.count('vegetarian') == 1 and dietary.count('gluten_free') == 1:
+                dietary = ['vegetarian_and_gf']
+                print('veggie gf success')
+            elif dietary.count('vegan') == 1 and dietary.count('gluten_free') == 1:
+                dietary = ['vegan_and_gf']
+                print('vegan gf success')
+            else:
+                return dietary
+            # print(dietary)
+            return dietary
+        
+        def day_list():
+            day = request.data['day']
+            print(day)
+            if day == [] or day == ['none']:
+                day = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'weekends', 'weekdays', 'all_days']
+            else:
+                day = day
+            print('dayList run')
+            print(day)
+            return day
+        
         price_low = request.data['price_low']
         price_high = request.data['price_high']
         time = request.data['time'] 
-        day = request.data['day']
         # if day == 'weekends':
         #     return ['weekends', 'saturday', 'sunday']
         # if day == 'weekdays':
@@ -35,7 +66,10 @@ class SearchItemsView(APIView):
         #     return ['monday', 'tuesday', 'wednesday', 'thursday', 
         #             'friday', 'saturday', 'weekends', 'weekdays', 'all_days']
         
-        dietary = request.data['dietary']
+        
+
+
+
         # if dietary == 'none':
         #     return ['none', 'vegetarian', 'vegan', 'gluten_free', 'vegetarian_and_gf', 'vegan_and_gf']
         # if dietary == 'vegetarian':
@@ -47,7 +81,7 @@ class SearchItemsView(APIView):
         
         # menu_items = MenuItem.objects.filter((Q(day__in=day) | Q(day="all_days")) & Q(price__gte=price_low) & Q(price__lte=price_high) & Q(open_time__lte=time) & Q(close_time__gte=time) & Q(tags__name__in=dietary))
         
-        menu_items = MenuItem.objects.filter((Q(day__in=day) | Q(day="all_days") | Q(tags__name__in=day)) & Q(price__gte=price_low) & Q(price__lte=price_high) & Q(open_time__lte=time) & Q(close_time__gte=time) & Q(tags__name__in=dietary))
+        menu_items = MenuItem.objects.filter((Q(day__in=day_list()) | Q(tags__name__in=day_list()) | Q(day="all_days")) & Q(price__gte=price_low) & Q(price__lte=price_high) & Q(open_time__lte=time) & Q(close_time__gte=time) & Q(tags__name__in=diet()))
 
         serializer = MenuItemSerializer(menu_items, many=True)
         
