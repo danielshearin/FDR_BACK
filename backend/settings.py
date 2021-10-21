@@ -15,8 +15,6 @@ from pathlib import Path
 import environ
 import django_on_heroku
 
-# del DATABASES['default']['OPTIONS']['sslmode']
-
 env = environ.Env(
     # set casting, default value
     DEBUG=(bool, False)
@@ -154,3 +152,4 @@ CORS_ORIGIN_WHITELIST = [
 ]
 
 django_on_heroku.settings(locals())
+del DATABASES['default']['OPTIONS']['sslmode']
