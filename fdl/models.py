@@ -2,6 +2,7 @@ from django.db import models
 from django.conf import settings
 from django.db.models.fields.related import ForeignKey
 from django.utils import timezone
+from taggit.managers import TaggableManager
 
 
 
@@ -30,7 +31,7 @@ TIME_CHOICES = [
 
 DAY_CHOICES = [
     ('all_days', 'ALL DAYS'),
-    ('weekdays', 'Weekdays'),
+    # ('weekdays', 'Weekdays'),
     ('weekends', 'Weekends'),
     ('monday', 'Monday'),
     ('tuesday', 'Tuesday'),
@@ -43,11 +44,19 @@ DAY_CHOICES = [
 
 DIETARY_CHOICES = [
     ('none', 'none'),
+    ('Vegan', 'Vegan'),
+    ('Vegetarian', 'Vegetarian'),
+    ('Gluten-free', 'Gluten-free'),
+    ('Vegetarian and Gluten-free', 'Vegetarian and GF'),
+    ('Vegan and Gluten-free', 'Vegan and GF'),
+    ('Dairy-free', 'Dairy-free')
+]
+
+TAG_CHOICES = [
     ('vegan', 'Vegan'),
     ('vegetarian', 'Vegetarian'),
     ('gluten_free', 'Gluten-Free'),
-    ('vegetarian_and_gf', 'Vegetarian and GF'),
-    ('vegan', 'Vegan and GF'),
+    ('dairy_free', 'Dairy-free'),
 ]
 
 
@@ -56,10 +65,11 @@ class Restaurant(models.Model):
     city = models.CharField(max_length=40, choices=CITY_CHOICES, default='Asheville')
     street = models.CharField(max_length=40)
     zip = models.CharField(max_length=10)
-    phone = models.CharField(max_length=10, null=False, blank=False, unique=True)
+    phone = models.CharField(max_length=14, null=False, blank=False, unique=True)
     longitude = models.FloatField(max_length=40,null=True, blank=True)
     latitude = models.FloatField(max_length=40,null=True, blank=True)
     coordinates = models.CharField(max_length=40, null=True, blank=True)
+    photo = models.ImageField(blank=True, null=True, upload_to="images")
     
     
     def __str__(self):
@@ -75,11 +85,12 @@ class MenuItem(models.Model):
     price = models.FloatField()
     description = models.TextField(max_length=1000)
     # location = models.ForeignKey(Restaurant, related_name='items', on_delete=models.CASCADE, blank=True, null=True)
-    day = models.CharField(max_length=40, choices=DAY_CHOICES, default="ALL DAYS")
+    day = models.CharField(max_length=40, null=True, blank=True, choices=DAY_CHOICES, default="ALL DAYS")
     time = models.CharField(max_length=40,choices=TIME_CHOICES, default="ALL TIMES")
     open_time = models.IntegerField()
     close_time = models.IntegerField()
-    dietary = models.CharField(max_length=40,choices=DIETARY_CHOICES, default='none')
+    dietary = models.CharField(max_length=40, null=True, blank=True, choices=DIETARY_CHOICES, default='none')
+    tags = TaggableManager(blank=True)
     
     # def publish(self):
     #     self.save()

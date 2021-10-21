@@ -4,12 +4,18 @@ from .models import Restaurant, MenuItem
 class RestaurantSerializer(serializers.ModelSerializer):
     class Meta:
         model = Restaurant
-        fields = ('id', 'name', 'city', 'street', 'zip', 'phone', 'longitude', 'latitude', 'coordinates')
+        fields = ('id', 'name', 'city', 'street', 'zip', 'phone', 'longitude', 'latitude', 'coordinates', 'photo')
         
         
 
 class MenuItemSerializer(serializers.ModelSerializer):
+    restaurant = RestaurantSerializer(many=False, read_only=True)
+    
     class Meta:
         model = MenuItem
-        fields = ('id', 'item', 'restaurant', 'price', 'description', 'day', 'dietary', 'open_time', 'close_time')
+        fields = ('id', 'item', 'price', 'description', 'day', 'dietary', 'open_time', 'close_time', 'restaurant')
 
+class ItemSearchSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MenuItem
+        fields = ('low_price', 'high_price', 'time', 'day', 'dietary')
