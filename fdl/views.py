@@ -47,7 +47,7 @@ class SearchItemsView(APIView):
         def day_list():
             day = []
             day_formdata = request.data['day']
-            if day_formdata == [] or day.count('none') == 1:
+            if day_formdata == [] or day_formdata.count('none') == 1:
                 print('day is null')
                 day.extend(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'weekends', 'weekdays', 'all_days'])
             if day_formdata.count('weekdays') == 1:
