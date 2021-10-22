@@ -6,8 +6,6 @@ from taggit.managers import TaggableManager
 
 
 
-
-
 CITY_CHOICES = [
     ('asheville', 'Asheville'),
     ('durham', 'Durham'),
@@ -31,7 +29,7 @@ TIME_CHOICES = [
 
 DAY_CHOICES = [
     ('all_days', 'ALL DAYS'),
-    # ('weekdays', 'Weekdays'),
+    ('weekdays', 'Weekdays'),
     ('weekends', 'Weekends'),
     ('monday', 'Monday'),
     ('tuesday', 'Tuesday'),

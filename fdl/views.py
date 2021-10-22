@@ -34,7 +34,7 @@ class SearchItemsView(APIView):
                 dietary = ['none']
                 print('none success')
             elif dietary.count('vegetarian') == 1 and dietary.count('gluten_free') == 1:
-                dietary = ['vegetarian_and_gf']
+                dietary = ['vegetarian_and_gf', 'vegan_and_gf']
                 print('veggie gf success')
             elif dietary.count('vegan') == 1 and dietary.count('gluten_free') == 1:
                 dietary = ['vegan_and_gf']
@@ -45,41 +45,36 @@ class SearchItemsView(APIView):
             return dietary
         
         def day_list():
-            day = request.data['day']
-            print(day)
-            if day == [] or day == ['none']:
-                day = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'weekends', 'weekdays', 'all_days']
+            day = []
+            day_formdata = request.data['day']
+            if day_formdata == [] or day.count('none') == 1:
+                print('day is null')
+                day.extend(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'weekends', 'weekdays', 'all_days'])
+            if day_formdata.count('weekdays') == 1:
+                day.extend(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'weekdays'])
+            if day_formdata.count('weekends') == 1:
+                day.extend(['saturday', 'sunday', 'weekends'])
+            if day_formdata.count('sunday') == 1:
+                day.extend(['saturday', 'weekends'])
+            if day_formdata.count('saturday') == 1:
+                day.extend(['sunday', 'weekends'])
+            if day_formdata.count('monday') == 1:
+                day.extend(['monday', 'weekdays'])
+            if day_formdata.count('tuesday') == 1:
+                day.extend(['tuesday', 'weekdays'])
+            if day_formdata.count('wednesday') == 1:
+                day.extend(['wednesday', 'weekdays'])
+            if day_formdata.count('thursday') == 1:
+                day.extend(['thursday', 'weekdays'])
+            if day_formdata.count('friday') == 1:
+                day.extend(['friday', 'weekdays'])
             else:
-                day = day
-            print('dayList run')
-            print(day)
+                day.extend(day)
             return day
         
         price_low = request.data['price_low']
         price_high = request.data['price_high']
         time = request.data['time'] 
-        # if day == 'weekends':
-        #     return ['weekends', 'saturday', 'sunday']
-        # if day == 'weekdays':
-        #     return ['weekdays', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday']
-        # if day == 'none':
-        #     return ['monday', 'tuesday', 'wednesday', 'thursday', 
-        #             'friday', 'saturday', 'weekends', 'weekdays', 'all_days']
-        
-        
-
-
-
-        # if dietary == 'none':
-        #     return ['none', 'vegetarian', 'vegan', 'gluten_free', 'vegetarian_and_gf', 'vegan_and_gf']
-        # if dietary == 'vegetarian':
-        #     return ['vegetarian', 'vegan', 'vegetarian_and_gf', 'vegan_and_gf']
-        # if dietary == 'vegan':
-        #     return ['vegan', 'vegan_and_gf']
-        # if dietary == 'gluten_free':
-        #     return ['gluten_free', 'vegetarian_and_gf', 'vegan_and_gf']
-        
-        # menu_items = MenuItem.objects.filter((Q(day__in=day) | Q(day="all_days")) & Q(price__gte=price_low) & Q(price__lte=price_high) & Q(open_time__lte=time) & Q(close_time__gte=time) & Q(tags__name__in=dietary))
         
         menu_items = MenuItem.objects.filter((Q(day__in=day_list()) | Q(tags__name__in=day_list()) | Q(day="all_days")) & Q(price__gte=price_low) & Q(price__lte=price_high) & Q(open_time__lte=time) & Q(close_time__gte=time) & Q(tags__name__in=diet()))
 
