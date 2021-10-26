@@ -147,10 +147,13 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'https://five-dollar-lunch.herokuapp.com',
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:3000',
+#     'https://five-dollar-lunch.herokuapp.com',
+#     ''
+# ]
+
+CORS_ALLOW_ALL_ORIGINS=True
 
 django_on_heroku.settings(locals())
 del DATABASES['default']['OPTIONS']['sslmode']
