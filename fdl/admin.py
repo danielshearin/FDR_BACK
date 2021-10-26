@@ -3,7 +3,7 @@ from .models import MenuItem, Restaurant
 
 
 class RestaurantAdmin(admin.ModelAdmin):
-    list_display = ('name', 'city', 'street', 'zip', 'phone', 'longitude', 'latitude', 'coordinates', 'photo')
+    list_display = ('name', 'city', 'street', 'zip', 'phone', 'website', 'longitude', 'latitude', 'coordinates', 'photo')
     
     
 class MenuItemAdmin(admin.ModelAdmin):

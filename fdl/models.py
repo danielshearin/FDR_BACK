@@ -10,6 +10,7 @@ CITY_CHOICES = [
     ('asheville', 'Asheville'),
     ('durham', 'Durham'),
     ('atlanta', 'Atlanta'),
+    ('nyc', 'NYC')
 ]
 
 
@@ -64,6 +65,7 @@ class Restaurant(models.Model):
     street = models.CharField(max_length=40)
     zip = models.CharField(max_length=10)
     phone = models.CharField(max_length=14, null=False, blank=False, unique=True)
+    website = models.CharField(max_length=60, null=True, blank=True)
     longitude = models.FloatField(max_length=40,null=True, blank=True)
     latitude = models.FloatField(max_length=40,null=True, blank=True)
     coordinates = models.CharField(max_length=40, null=True, blank=True)
