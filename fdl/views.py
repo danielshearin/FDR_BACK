@@ -41,7 +41,6 @@ class SearchItemsView(APIView):
                 print('vegan gf success')
             else:
                 return dietary
-            # print(dietary)
             return dietary
         
         def day_list():
@@ -81,4 +80,3 @@ class SearchItemsView(APIView):
         serializer = MenuItemSerializer(menu_items, many=True)
         
         return Response(serializer.data)
-        # return Response(day)
