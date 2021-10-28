@@ -147,9 +147,6 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CORS_ALLOWED_ORIGINS = [
-#     'http://localhost:3000'
-# ]
 
 CORS_ALLOW_ALL_ORIGINS=True
 
@@ -161,12 +158,6 @@ CORS_ALLOW_METHODS = [
     "POST",
     "PUT",
 ]
-
-# ALLOWED_HOSTS=['http://localhost:3000']
-
-# CORS_ORIGIN_ALLOW_ALL = False
-
-
 
 
 django_on_heroku.settings(locals())
