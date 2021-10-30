@@ -59,6 +59,7 @@ TAG_CHOICES = [
 ]
 
 
+
 class Restaurant(models.Model):
     name = models.CharField(max_length=40)
     city = models.CharField(max_length=40, choices=CITY_CHOICES, default='Asheville')
@@ -75,9 +76,7 @@ class Restaurant(models.Model):
     def __str__(self):
         return self.name
     
-    # class Meta:
-    #     ordering = ['restaurant']
-    
+
 
 class MenuItem(models.Model):
     item = models.CharField(max_length=100)
@@ -92,11 +91,7 @@ class MenuItem(models.Model):
     dietary = models.CharField(max_length=40, null=True, blank=True, choices=DIETARY_CHOICES, default='none')
     tags = TaggableManager(blank=True)
     
-    # def publish(self):
-    #     self.save()
         
     def __str__(self):
         return self.item
     
-    # class Meta:
-    #     ordering = ['item']

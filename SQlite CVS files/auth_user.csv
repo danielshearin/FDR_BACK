@@ -1,2 +1,0 @@
-id,password,last_login,is_superuser,username,last_name,email,is_staff,is_active,date_joined,first_name
-1,pbkdf2_sha256$260000$zcVgffa3L5S0nwfG7N5l8r$znUpv8knV1VWqDMDDIEQkAX/VLZ9xwKjJUWlvh9osss=,2021-09-22 21:00:27.907236,1,danielshearin,,danielshearin@gmail.com,1,1,2021-09-22 21:00:00.219515,
